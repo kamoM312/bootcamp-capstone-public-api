@@ -1,0 +1,29 @@
+<%- include('partials/header.ejs') %>
+
+<body>
+    <% if(locals.drink) { %>
+    <div>
+        <div>
+            <h2><%= drink.name %></h2>
+        </div>
+        <div>
+            <p><%= drink.recipe %></p>
+        </div>
+        <div>
+            <img src="<%= drink.image %>" alt="image of drink">
+        </div>
+    </div>
+    <% } %>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+<%- include('partials/footer.ejs') %>

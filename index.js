@@ -19,7 +19,7 @@ app.get("/", async (req, res) => {
 
     console.log(drink);
 
-    res.render("index.ejs", drink)
+    res.render("index.ejs", { drink });
 })
 
 app.listen(PORT, () => {
